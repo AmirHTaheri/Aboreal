@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Aboreal</title>
+
+  <link rel="stylesheet" href="Aboreal.css">
+  <link rel="stylesheet" href="nav.css">
+  <script src="Aboreal.js"></script>
+</head>
+
+<body>
+  <header class="header gradient">
+
+    <div class="logo">
+      <img src="pics/Abo-logo.png" alt="logo" width="150">
+    </div>
+    <div class="">
+
+    <a class="toggleMenu" href="#">Menu</a>
+    <ul class="nav">
+      <li  class="test">
+        <a href="#Innehål">Innehåll</a>
+      </li>
+      <li>
+        <a href="#Mission">Mission</a>
+      </li>
+      <li>
+        <a href="#Slogan">Slogan</a>
+      </li>
+      <li>
+        <a href="#Logotyp">Logotyp</a>
+      </li>
+      <li>
+        <a href="#Pricing">Pricing</a>
+      </li>
+      <li>
+        <a href="#Themes">Themes</a>
+        <ul>
+          <li class="test">
+            <a href="#Aloha">Aloha</a>
+          </li>
+          <li>
+            <a href="#Siberia">Siberia</a>
+          </li>
+          <li>
+            <a href="#Exotique">Exotique Nørdic</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#Contact">Contact </a>
+      </li>
+    </ul>
+    </div>
+
+  </header>
+
+  <div class="wrapper">
+    <article class="main">
+      <h1> <span id="Innehål"></span> Innehål</h1>
+      <p>Startup-företaget Arboreal behöver en ny hemsida för sin affärsidé. Ni har fått i uppdrag att skapa denna sida.</p>
+      <h1> <span id="Mission"></span> Mission</h1>
+        <p>Arboreal revolutionizes the way you think about plants in an office environment. Arboreal isn't just a a delivery service for plants, it's a delivery service for new ideas. Arboreal makes it easy to keep your workplace fresh and oxygenated.</p>
+        <h1> <span id="Slogan"></span> Slogan</h1>
+          <p>A workplace that is a alive create ideas that live on.
+          </p>
+          <h1> <span id="Logotyp"></span> Logotyp</h1>
+            <p>Logotyper i olika färger finns i detta repository: <a href="https://github.com/fend17/arboreal-logo">here</a> </p>
+
+            <h1> <span id="Pricing"></span>Pricing</h1>
+            <table>
+                <thead>
+                <tr>
+                  <th>Standard</th>
+                  <th>Premium</th>
+                  <th>Exclusive</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Watering not included</td>
+                  <td>Watering included</td>
+                  <td>Web-controlled automated watering system included</td>
+                </tr>
+                <tr>
+                  <td>No change of dead plants, monthly plant change</td>
+                  <td>Exchange of dead plants included, monthly plant change</td>
+                  <td>Change of dead plants included, weekly plant exchange</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Surveillence system for every plant. 24/7 support for emergencies</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Only locally grown plants. Exotic plants flown in by private jet</td>
+                </tr>
+                </tbody>
+              </table>
+              <h1><span id="Themes"></span>Themes</h1>
+                <h3><span id="Aloha"></span>Aloha</h3>
+                <p>This rich theme includes exotic coconuts spilling all over the floor combined with palm trees that hang down and are always in the way of your daily workflow. This theme is very complicated, suitable for complex startups with a unclear monetizing strategy.</p>
+                <h3><span id="Siberia"></span>Siberia</h3>
+                <p>Dead plants everywhere. Plants sprayed with white color to give that cold secluded look.</p>
+                <h3><span id="Exotique"></span>Exotique Nørdic</h3>
+                <p>Everything is pine and spruce. Get that Norrlands inland-look in your office. Comes with a Christmas Decoration Extension Pack for the first 100 subscribers (Bears not included).</p>
+
+              <h1><span id="Contact"></span>Contact</h1>
+              <form action="index.html" method="post">
+                <div class="form-row">
+                  <label for="name">Name: </label>
+                  <input type="text" class="form-filled" placeholder="Skriv ditt namn" id="name" required pattern="[a-zA-Z0-9]+">
+                </div>
+                <div class="form-row">
+                  <label for="name">telefonnummer: </label>
+                  <input type="text"  class="form-filled" id="telefonnummer" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
+                </div>
+                <div class="form-row">
+                  <label for="name">email: </label>
+                  <input type="text" class="form-filled" id="email" required>
+                </div>
+                <div class="form-row">
+                  <label for="name">företag : </label>
+                  <input type="text" class="form-filled" id="företag">
+                </div>
+                <div class="form-row">
+                  <label for="name">meddelande: </label>
+                    <textarea name="name"  class="form-filled" rows="8" cols="50" required></textarea>
+                </div>
+                <div class="form-row">
+                  <input type="submit" id="submit" value="Submit" onclick="sendme()">
+                </div>
+              </form>
+
+    </article>
+    <aside class="aside-1">
+      <div class="fixed-left">
+        <h2>Partners</h2>
+        <ul class="">
+          <li><a href="#">Ambola</a></li>
+          <li><a href="#">Bikini</a></li>
+          <li><a href="#">Jeeze</a></li>
+          <li><a href="#">Aukh</a></li>
+        </ul>
+      </div>
+    </aside>
+    <aside class="aside-2">
+      <div class="fixed-right">
+        <h2>Events</h2>
+
+      </div>
+    </aside>
+    <footer class="footer">
+      <div class="footer-child"><h3>Contacts</h3></div>
+      <div class="footer-child"><h3>Sponsors</h3> </div>
+      <div class="footer-child"><h3>Map</h3> </div>
+    </footer>
+
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="nav.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+* {
+  /*font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif;
+  font-size: 33px;*/
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+
+
+.wrapper {
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 225px;
+  padding-top: 20px;
+}
+
+.wrapper h2 {
+  border-bottom: 2px solid green;
+  color: #2DB475;
+  text-align: center;
+  font-size: 18px;
+}
+
+.wrapper h1 {
+  border-bottom: 2px solid green;
+  color: #2DB475;
+  text-align: center;
+  font-size: 28px;
+}
+
+.wrapper>* {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: lightgray;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  border: 3px solid #73AD21;
+  width: calc(100% - 0px);
+  margin-right: 10px;
+  box-sizing: border-box;
+  background-color: red;
+  background-image: linear-gradient( to right, red, #f06d06, rgb(255, 255, 0), green);
+}
+
+.logo {
+  flex: 3;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.navigation {
+  flex: 1;
+  list-style:none;
+  margin: 0;
+  background: deepskyblue;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  /* To blur the font*/
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em 0.5em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: #00b7f5;
+}
+
+a:hover {
+  background: red;
+}
+
+.footer {
+
+}
+
+.footer-child {
+  flex-basis: 33%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 20px auto 0 auto;
+}
+
+.footer-child:nth-child(1) {
+  background: gray;
+  order: 1;
+}
+
+.footer-child:nth-child(2) {
+  background: deepskyblue;
+  order: 2;
+}
+
+.footer-child:nth-child(3) {
+  background: red;
+  order: 3;
+}
+
+.main {
+  flex: 3;
+  text-align: left;
+  background: #657382;
+}
+
+.aside-1 {
+  flex: 1;
+}
+
+.fixed-left{
+  position: fixed;
+  top:260px;
+  left:40px;
+}
+
+.fixed-right{
+  position: fixed;
+  right: 90px;
+}
+
+.aside-1 ul li {
+  display: block;
+  text-align: left;
+}
+
+.aside-2 {
+  flex: 1;
+}
+
+.emptydiv {
+  height: 100px;
+  position: relative;
+}
+
+@media (min-width:800px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav {
+    justify-content: space-around;
+  }
+  .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .aside-1 {
+    display: none;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+  .aside-1 {
+    order: 1;
+  }
+  .main {
+    order: 2;
+  }
+  .aside-2 {
+    order: 3;
+  }
+  .footer {
+    order: 4;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+  .navigation ul {
+    display: inline;
+  }
+}
+
+/* form with flex*/
+.form-row{
+  padding: 10px 0;
+  display: flex;
+}
+
+.form-row label{
+  flex:1;
+  padding-right: 10px;
+}
+
+.form-row input{
+  flex:2;
+}
+
+
+
+/*
+	Generic Styling, for Desktops/Laptops
+	*/
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+	/* Zebra striping */
+	tr:nth-of-type(odd) {
+		background: #eee;
+	}
+	th {
+		background: #333;
+		color: white;
+		font-weight: bold;
+	}
+	td, th {
+		padding: 6px;
+		border: 1px solid #ccc;
+		text-align: left;
+	}
+
+/* Compensate for the offset in anchoring*/
+  :target {
+      display: block;
+      position: relative;
+      top: -240px;
+      visibility: hidden;
+  }
